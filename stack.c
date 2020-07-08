@@ -1,11 +1,16 @@
+/*
+	SEED Ubuntu 16.04
+	vi editor
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
-int bof(char *str)
+int bof(char *str) //오버플로우 함수 
 {
-	char buffer[24]; //buffer size 24
-	strcpy(buffer, str);
+	char buffer[24]; //
+	strcpy(buffer, str); //오버플로우 시점 
 	
 	return 1;
 }
